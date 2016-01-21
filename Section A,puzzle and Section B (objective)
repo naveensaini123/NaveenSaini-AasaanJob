@@ -1,0 +1,69 @@
+
+Section A 
+Aptitude Test 
+1.d
+2.b
+3. a
+4.c
+5.b
+6.d
+7.b
+8.a
+9.a
+10.c
+11.b
+12.d
+13.b
+14.b
+15.d
+16.a
+17.
+18.c
+19.b
+20.d
+
+
+section-B
+Technical Test (Objective)
+
+1.b
+2.c
+3.d
+4.d
+5.c
+6.b
+7.c
+8.b
+9.c
+10.a
+11.a
+12.a
+13.a
+14.a
+15.e
+16.b
+17.d
+18.d
+19.c
+20.c
+21.b
+22.a
+23.a
+24.b
+25.b
+26.c
+27.a
+28.a
+29.c
+30.b
+
+PUZZLE
+We need to figure out in hour. We need 10 rats to figure out the poisoned bottle.
+IN THIS QUESTION WE WILL USE BINARY CONCEPT.
+The result is based on binary number system. 
+ As We get 10 using[Log100] and there are 10 rats so we can figure it out using binary number.
+The idea is to number bottles from 1 to 100 and write their corresponding binary numbers on the bottle.
+Each rat is assigned a position in the binary numbers written on bottles. 
+Let us take an example. Rat 1 represents first bit in every bottle, 
+rat 2 represents second bit and so on. 
+If rat numbers 3, 5 and 7 die, then bottle number 84 (Binary 001010100) is poisoned.
