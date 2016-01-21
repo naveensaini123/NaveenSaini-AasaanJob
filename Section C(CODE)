@@ -1,0 +1,81 @@
+Section c
+Q1
+ANS1
+#include<iostream>
+using namespace std;
+
+int main()
+{
+  int array[101];
+  cout<<"ENter number ";
+  for(int i=0;i<100;i++)
+   cin>>array[i];
+
+for (int i = 1; i<100; i++)
+{
+   array[i] = array[i] ^ array[i-1] ^ i;
+}
+
+cout<<"Answer"<<array[100];
+return 0;
+}
+
+
+
+ Q3
+ ANS3
+#include<iostream>
+#include<algorithm>
+#include<stdio.h>
+#include<math.h>
+#include<limits.h>
+using namespace std;
+
+
+void minPair(int arr[], int n)
+{
+    int l, r , minSum, sum = 0, min_l, min_r;
+ 
+    /* Array should have at least two elements*/
+    if(n < 2)
+    {
+        printf("Invalid Input");
+        return;
+    } 
+ 
+    /* Sort the elements */
+    sort(arr,arr+n);
+ 
+ 
+    
+    l = 0; r = n-1;   // Start looking for the pair
+    minSum = arr[l] + arr[r];
+    min_l = l; 
+    min_r = r; 
+     
+    while(l < r)
+    {
+        sum = arr[l] + arr[r];
+ 
+        
+        if(abs(sum) < abs(minSum))  //If abs(sum) is less then update the result items
+        {
+            minSum = sum;
+            min_l = l;
+            min_r = r;
+        }
+        if(sum < 0)
+            l++;
+        else
+            r--;
+ 
+    }
+ 
+    cout<<" The two elements whose sum is minimum are %d and %d"<<arr[min_l]<<" "<<arr[min_r];
+}
+int main()
+{
+    int arr[] = {15, 5, -20, 30, -45};
+    minPair(arr, 5);
+    return 0;
+} 
